@@ -1,0 +1,8 @@
+﻿<Window x:Class="Atelier5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525" xmlns:my="clr-namespace:Atelier5.View">
+    <Grid>
+        <my:FilteredListView HorizontalAlignment="Left" x:Name="filteredListView1" VerticalAlignment="Top" Height="311" Width="503" />
+    </Grid>
+</Window>

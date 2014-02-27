@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <!-- Meta Settings -->
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <meta name="description" content="" />
+        <meta name="author" content="Majdi houidi" />
+        <script type="text/javascript" src="assets/scripts/three.min.js"></script>
+        <script type="text/javascript" src="assets/scripts/snake.js"></script>
+        <!-- Title -->
+        <title>Snake Game - ThreeJs</title>
+        <!-- Fonts -->
+        <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css" />
+        <!-- Css Files -->
+        <link rel="stylesheet" type="text/css" href="assets/styles/style.css" media="all" />
+        <link rel="stylesheet" type="text/css" href="assets/styles/responsive.css" media="all" />
+
+
+    </head>
+    <body onload="loading();">
+
+        <!-- Loading -->
+        <div id="loading">
+            <div class="spinner">
+            </div>
+        </div>
+        <div class="mainWrap">
+
+            <!-- Snow Effect -->
+            <div class="snowEffect">
+            </div>
+            <!-- Topmost Ices -->
+            <div class="iceWrap">
+            </div>
+            <!--<img src="assets/images/General/moon.png" alt="moon" class="moon" />-->
+
+            <!-- Menu -->
+            <div class="counterTable">
+                <span class="title">Snake Game</span>
+                <span>Score : <i id="score">0</i></span>
+                <span>EPSI</span>
+                <a href="index.html">Recommencer</a>
+            </div>
+            <!-- Game -->
+            <div class="treeWrap">
+                <canvas id="snakegame"></canvas>
+
+                <script>
+        var largeur = 32;
+        var direction = new Array(1, 0, 0); // se d�place vers la droite sur l'axe des x
+        var tabCube = new Array; // notre snake
+        var bonbon;	// les bonbons que doit manger le snake pour grandir et augmenter le score du joueur
+        var espaceDeJeu; // les limites du jeu
+
+
+        bonbon = new THREE.Mesh(new THREE.CubeGeometry(largeur, largeur, largeur), new THREE.MeshNormalMaterial({color: 0x0000ff, wireframe: false}));
+        espaceDeJeu = new THREE.Mesh(new THREE.CubeGeometry(largeur * 20, largeur * 20, largeur * 20), new THREE.MeshBasicMaterial({color: 'white', wireframe: true}));
+
+        // mod�lisation
+        var scene = new THREE.Scene();
+
+        var i;
+        for (i = 0; i <= 2; i++) {
+            tabCube[i] = new THREE.Mesh(new THREE.CubeGeometry(largeur, largeur, largeur), new THREE.MeshNormalMaterial({color: 0x0000ff, wireframe: false}));
+        }
+
+        tabCube[0].position.x = largeur * 2;
+        scene.add(tabCube[0]);
+        tabCube[1].position.x = largeur;
+        scene.add(tabCube[1]);
+        scene.add(tabCube[2]);
+
+        scene.add(bonbon);
+        positionAleatoireBonbon();
+
+        scene.add(espaceDeJeu);
+
+        scene.add(new THREE.AmbientLight(0x222222));
+
+        var light = new THREE.PointLight(0xFFFFFF);
+        light.position.y = 1000;
+        scene.add(light);
+
+        // rendu			
+        var renderer = new THREE.WebGLRenderer(
+                {canvas: document.getElementById("snakegame")}
+        );
+        //Caméra
+        var camera = new THREE.PerspectiveCamera(75, 4 / 3, 1, 10000);
+        camera.position.set(500, 500, 500);
+        camera.lookAt(new THREE.Vector3(0, 0, 0));
+
+        renderer.setSize(720, 480);
+
+
+
+        var timer = setInterval("animate()", 100);
+        document.addEventListener("keydown", allouerDirection);
+                </script>
+
+            </div>
+            <!-- North Pole Point -->
+            <div class="northPole">
+            </div>
+        </div>
+        <!-- Script Files -->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+        <script type="text/javascript" src="assets/scripts/custom.js"></script>
+
+
+        <!-- Inline Scripts -->
+
+
+    </body>
+</html>
+
+<!-- Localized -->

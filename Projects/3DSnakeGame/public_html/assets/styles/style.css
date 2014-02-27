@@ -1,0 +1,81 @@
+@import url('pfold.css');
+
+/* General Settings - Start */
+body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; font-family:'Lobster', Times New Roman; }
+
+.mainWrap { width:100%; height:100%; overflow:hidden; background:url('../images/General/bg.jpg') no-repeat bottom; position: absolute; top:0; left:0; z-index:999; }
+
+a { text-decoration:none; }
+ul { padding:0px; margin:0px; list-style:none; }
+
+div.pattern { display:none; width:100%; height:100%; background-color: rgba(0,0,0,0.6); position:absolute; top:0; left:0; z-index:900; }
+/* General Settings - End */
+
+/* Loading - Start */
+#loading { width: 100%; height: 100%; background:#193c54 url('../images/Loading/Loading-bg.jpg') no-repeat center; position: fixed; top: 0; left: 0; z-index:9999; }
+
+#loading .spinner { position: relative; width: 94px; height: 112px; top:50%; margin: -56px auto; background: url('../images/Loading/loading.png') no-repeat center; -webkit-animation: mask 1s infinite alternate; -moz-animation: mask 1s infinite alternate; -ms-animation: mask 1s infinite alternate; -o-animation: mask 1s infinite alternate; animation: mask 1s infinite alternate; }
+
+@-webkit-keyframes mask {
+    0%  { -webkit-transform: rotate(90deg); }
+    100%  { -webkit-transform: rotate(-90deg); }
+}
+
+@-moz-keyframes mask {
+    0%  { -moz-transform: rotate(90deg); }
+    100%  { -moz-transform: rotate(-90deg); }
+}
+
+@-ms-keyframes mask {
+    0%  { -ms-transform: rotate(90deg); }
+    100%  { -ms-transform: rotate(-90deg); }
+}
+
+@-o-keyframes mask {
+    0%  { -o-transform: rotate(90deg); }
+    100%  { -o-transform: rotate(-90deg); }
+}
+
+@keyframes mask {
+    0%  { transform: rotate(90deg); }
+    100%  { transform: rotate(-90deg); }
+}
+/* Loading - End */
+
+
+
+/* Moon - Start */
+img.moon { display:block; width:447px; height:294px; margin:70px auto; }
+/* Moon - End */
+
+/* Big Screen - Start */
+.bigScreenWrap { display:block; width:86px; height:75px; padding:180px 110px 0px 12px; position:absolute; overflow:hidden; bottom:250px; right:-250px; background:url('../images/General/bigScreen.png') no-repeat center; z-index:600; }
+.bigScreenWrap span { display:block; text-align:center; font-size:20px; color:#082028; line-height:23px; }
+.bigScreenWrap span.title { font-size:25px; color:#df1e22; }
+/* Big Screen - End */
+
+/* Counter Table - Start */
+.counterTable { width:254px; height: 282px; background:url(../images/General/table.png) no-repeat top right; position:absolute; top:0px; right:50px; z-index:8000; }
+
+.counterTable span { display:block; margin-bottom:8px; text-align:center; color:#082028; font-size:25px; line-height:45px; }
+.counterTable span.title { margin-top:60px; font-size:20px; }
+
+.counterTable a { display:block; color:#FFF; font-size:28px; line-height:37px; text-align:center; text-shadow: 3px 3px 2px rgba(0,0,0,0.4); }
+/* Counter Table - End */
+
+
+/* Ice Wrap - Start */
+.iceWrap { width:100%; height:71px; background:url('../images/General/ice.png') repeat-x bottom left; position:absolute; top:0; left:0; z-index:9000; }
+/* Ice Wrap - End */
+
+/* Tree - Start */
+.treeWrap { width:100%; height:100%; overflow:hidden; position:absolute; top:0; left:0; z-index:3000; }
+
+.treeWrap #snakegame { width:720px; height:560px; position:absolute; bottom:154px; left:40%; margin-left:-245px; z-index:810; }
+.treeWrap #snakegame{
+}
+
+/* North Pole - Start */
+.northPole { width:276px; height:208px; position:absolute; bottom:150px; left:50%; margin-left:315px; background:url('../images/General/northPole1.png') no-repeat center; z-index:700; }
+/* North Pole - End */
+

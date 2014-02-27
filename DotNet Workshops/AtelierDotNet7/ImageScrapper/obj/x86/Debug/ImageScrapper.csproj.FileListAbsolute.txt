@@ -1,0 +1,5 @@
+C:\Documents and Settings\Administrateur\Mes documents\Visual Studio 2010\Projects\Atelier7\ImageScrapper\bin\Debug\ImageScrapper.exe
+C:\Documents and Settings\Administrateur\Mes documents\Visual Studio 2010\Projects\Atelier7\ImageScrapper\bin\Debug\ImageScrapper.pdb
+C:\Documents and Settings\Administrateur\Mes documents\Visual Studio 2010\Projects\Atelier7\ImageScrapper\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrateur\Mes documents\Visual Studio 2010\Projects\Atelier7\ImageScrapper\obj\x86\Debug\ImageScrapper.exe
+C:\Documents and Settings\Administrateur\Mes documents\Visual Studio 2010\Projects\Atelier7\ImageScrapper\obj\x86\Debug\ImageScrapper.pdb

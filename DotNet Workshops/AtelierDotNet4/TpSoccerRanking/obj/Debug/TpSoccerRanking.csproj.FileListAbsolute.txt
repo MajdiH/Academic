@@ -1,0 +1,7 @@
+C:\Documents and Settings\Administrateur\Mes documents\Visual Studio 2010\Projects\Atelier4\TpSoccerRanking\bin\Debug\TpSoccerRanking.dll
+C:\Documents and Settings\Administrateur\Mes documents\Visual Studio 2010\Projects\Atelier4\TpSoccerRanking\bin\Debug\TpSoccerRanking.pdb
+C:\Documents and Settings\Administrateur\Mes documents\Visual Studio 2010\Projects\Atelier4\TpSoccerRanking\bin\Debug\SoccerRankingLib.dll
+C:\Documents and Settings\Administrateur\Mes documents\Visual Studio 2010\Projects\Atelier4\TpSoccerRanking\bin\Debug\SoccerRankingLib.pdb
+C:\Documents and Settings\Administrateur\Mes documents\Visual Studio 2010\Projects\Atelier4\TpSoccerRanking\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrateur\Mes documents\Visual Studio 2010\Projects\Atelier4\TpSoccerRanking\obj\Debug\TpSoccerRanking.dll
+C:\Documents and Settings\Administrateur\Mes documents\Visual Studio 2010\Projects\Atelier4\TpSoccerRanking\obj\Debug\TpSoccerRanking.pdb
